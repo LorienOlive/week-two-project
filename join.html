@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Film Club - Join</title>
+    <link  href="main.css" rel="stylesheet">
+    <link  href="join-styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+      <nav>
+        <ul class="nav-row">
+          <li class="nav-item1">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav-item2">
+            <a href="calendar.html">Calendar</a>
+          </li>
+          <li class="nav-item3">
+            <a href="join.html">Join</a>
+          </li>
+        </ul>
+        <div class="logo">
+          <img src="images/filmclub.png" alt="logo for film club">
+        </div>
+      </nav>
+
+      <header>
+        <h1>Join Film Club</h1>
+      </header>
+
+      <div class="body">
+        <form class="form-container">
+          <div>
+            <div class="profile-container">
+              <fieldset class="profile-pic">
+                <label for="picture">profile picture</label>
+                <input type="file" id="picture"></input>
+                <img src="images/profile-placeholder.png" alt="placeholder for profile picture"></div>
+              </fieldset>
+            </div>
+            <div class="txtbox-container">
+              <fieldset class="name-email">
+                <label for="name">name</label>
+                <input type="text" id="name">
+                <label for="email">email address</label>
+                <input type="text" id="email">
+              </fieldset>
+              <fieldset class="password-entry">
+                <label for="password">password</label>
+                <input type="password" id="password">
+                <label for="confirm-password">confirm password</label>
+                <input type="text" id="confirm-password">
+              </fieldset>
+            </div>
+          </div>
+        </form>
+        <h4>Which genres are you interested in?</h4>
+        <ul class="genres">
+          <li class="genre-checkbox">
+            <input type="checkbox" id="action">
+            <label for="action"><span></span>action</label>
+          </li>
+          <li class="genre-checkbox">
+            <input type="checkbox" id="comedy">
+            <label for="comedy"><span></span>comedy</label>
+          </li>
+          <li class="genre-checkbox">
+              <input type="checkbox" id="fantasy">
+              <label for="fantasy"><span></span>fantasy</label>
+          </li>
+          <li class="genre-checkbox">
+            <input type="checkbox" id="horror">
+            <label for="horror"><span></span>horror</label>
+          </li>
+          <li class="genre-checkbox">
+            <input type="checkbox" id="romance">
+            <label for="romance"><span></span>romance</label>
+          </li>
+          <li class="genre-checkbox">
+            <input type="checkbox" id="western">
+            <label for="western"><span></span>western</label>
+          </li>
+          <li class="genre-checkbox">
+            <input type="checkbox" id="adventure">
+            <label for="adventure"><span></span>adventure</label>
+          </li>
+          <li class="genre-checkbox">
+            <input type="checkbox" id="drama">
+            <label for="drama"><span></span>drama</label>
+          </li>
+          <li class="genre-checkbox">
+            <input type="checkbox" id="historical">
+            <label for="historical"><span></span>historical</label>
+          </li>
+          <li class="genre-checkbox">
+            <input type="checkbox" id="mystery">
+            <label for="mystery"><span></span>mystery</label>
+          </li>
+          <li class="genre-checkbox">
+            <input type="checkbox" id="science-fiction">
+            <label for="science-fiction"><span></span>science fiction</label>
+        </ul>
+        <fieldset class="addition-txt">
+          <label for="additional-txt">Additional input</label>
+          <input type="textarea" id="additional-txt">
+        </fieldset>
+        <button>Join Film Club</button>
+      </div>
+
+      <footer>
+        <ul class="footer-nav-row">
+          <li class="footer-nav-item1">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="footer-nav-item2">
+            <a href="calendar.html">Calendar</a>
+          </li>
+          <li class="footer-nav-item3">
+            <a href="join.html">Join</a>
+          </li>
+        </ul>
+        <p class="footer-txt">&#169;2017, Film Club<p>
+      </footer>
+
+  </body>
+</html>

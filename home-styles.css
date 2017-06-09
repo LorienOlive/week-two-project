@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
+body {
+  margin: 0;
+}
+
+/* --- Header Mobile Display --- */
+
+
+h1 {
+  font-family: "PT Sans";
+  font-weight: 200;
+  font-size: 6vw;
+  color: #0B1942;
+  margin-left: 5vw;
+}
+
+.body {
+  width: 100%;
+}
+
+/* --- Body: Text Columns Mobile Display --- */
+
+.txt-column h3 {
+  font-family: "PT Sans";
+  font-weight: 200;
+  font-size: 5vw;
+  color: #FFFFFF;
+  background: #0B1942;
+  padding-left: 4vw;
+  margin: 4vw;
+}
+
+.txt-column p {
+  font-family: "PT Sans";
+  font-size: 2vw;
+  color: #0B1942;
+  line-height: 7vw;
+  margin: 0 5vw 0 5vw;
+}
+
+.body {
+  background: #0B1942;
+  display: inline-block;
+  margin-top: 5vw;
+}
+
+.body h3 {
+  font-family: "PT Sans";
+  font-size: 10vw;
+  font-weight: 200;
+  color: #FFFFFF;
+  padding: 2vw 5vw 3vw 5vw;
+  margin: 0vw;
+}
+
+/* --- Body: Main Film Layout Mobile Display --- */
+
+.simple-container {
+  background: #E2E2E2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0 3.5vw 3.5vw 3.5vw;
+}
+
+#rashomon {
+  background: url("images/rashomon-poster.jpg") center no-repeat;
+  background-size: cover;
+  width: 39vw;
+  height: 57vw;
+  margin: 4vw;
+}
+
+.rashomon-txt a {
+  font-family: "PT Sans";
+  font-size: 6vw;
+  color: #00B7D3;
+  display: inline-block;
+  margin-top: 3vw;
+  cursor: pointer;
+}
+
+.film-date1 {
+  font-family: "PT Sans";
+  font-size: 4vw;
+  color: #0B1942;
+  margin: 1vw 0 3vw 0;
+}
+
+.film-date1 span {
+  font-weight: 700;
+}
+
+hr {
+  width: 35vw;
+  height: 2px;
+  color: #0B1942;
+}
+
+h4 {
+  font-family: "PT Sans";
+  font-size: 3.5vw;
+  color: #0B1942;
+  font-weight: 700;
+  margin-bottom: 3vw;
+}
+
+.discussion-points {
+  list-style: circle;
+}
+
+.list-item {
+  font-family: "PT Sans";
+  font-size: 3.5vw;
+  color: #0B1942;
+  line-height: 6.5vw;
+}
+
+/* --- Body: Secondary Film Layout Mobile Display --- */
+
+
+.grid-container {
+  background: #E2E2E2;
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-template-rows: 48% 48%;
+  margin: 0 3.5vw 7vw 4vw;
+}
+
+#great-train-robbery {
+  background: url("images/great-train-poster.jpg") center no-repeat;
+  background-size: cover;
+  width: 39vw;
+  height: 57vw;
+  margin: 4vw 4vw 1vw 4vw;
+}
+
+#bicycle-thief {
+  background: url("images/bicycle-thief-poster.jpg") center no-repeat;
+  background-size: cover;
+  width: 39vw;
+  height: 57vw;
+  margin: 4vw 4vw 1vw 4vw;
+}
+
+#nosferatu {
+  background: url("images/nosferatu-poster.jpg") center no-repeat;
+  background-size: cover;
+  width: 39vw;
+  height: 57vw;
+  margin: 4vw 4vw 1vw 4vw;
+}
+
+#metropolis {
+  background: url("images/metropolis-poster.jpg") center no-repeat;
+  background-size: cover;
+  width: 39vw;
+  height: 57vw;
+  margin: 4vw 4vw 1vw 4vw;
+}
+
+.grid-item a {
+  font-family: "PT Sans";
+  font-size: 2.92vw;
+  color: #00B7D3;
+  margin-left: 3.5vw;
+  cursor: pointer;
+}
+
+.film-date2 {
+  font-family: "PT Sans";
+  font-size: 2.92vw;
+  color: #0B1942;
+  margin: 1vw 0 3vw 3.5vw;
+}
+
+.film-date2 span {
+  font-weight: 700;
+}
+
+
+
+@media only screen and (min-device-width: 545px) and (max-device-width: 768px) {
+
+/* --- Header Tablet Display --- */
+
+  h1 {
+    font-size: 6vw;
+    margin-left: 2vw;
+  }
+
+  .column-container {
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-around;
+  }
+
+/* --- Body: Text Columns Mobile Display --- */
+
+  .txt-column h3 {
+    font-size: 4vw;
+    width: 27vw;
+    padding: 1vw 0 1vw 2vw;
+    margin: 0 1.75vw 2.5vw 1.75vw ;
+  }
+
+  .txt-column p {
+    font-size: 2vw;
+    color: #0B1942;
+    line-height: 3vw;
+    padding: 0;
+    margin: 0 2vw 0vw 2vw;
+  }
+
+  .body h3 {
+    font-size: 6vw;
+  }
+
+/* --- Body: Main Film Layout Tablet Display --- */
+
+  #rashomon {
+    width: 41vw;
+    height: 66vw;
+    margin: 2.5vw;
+  }
+
+  .rashomon-txt a {
+    font-size: 4vw;
+    margin-top: 3vw;
+  }
+
+  .film-date1 {
+    font-size: 3vw;
+    color: #0B1942;
+  }
+
+  hr {
+    width: 40vw;
+    height: 2px;
+    margin: -1vw 0 -1vw 0;
+    color: #0B1942;
+  }
+
+  h4 {
+    font-size: 3vw;
+    color: #0B1942;
+    font-weight: 700;
+    margin-bottom: 1vw;
+  }
+
+  .discussion-points {
+    padding-left: 3vw;
+
+  }
+  .list-item {
+    font-size: 3vw;
+    line-height: 5vw;
+  }
+
+/* --- Body: Secondary Film Layout Tablet Display --- */
+
+  .grid-container {
+    background: #E2E2E2;
+    display: flex;
+    flex-flow: nowrap row;
+    margin: 0 3.5vw 7vw 3.5vw;
+  }
+
+  #great-train-robbery {
+    width: 20vw;
+    height: 29vw;
+    margin: 2vw 0 .5vw 2vw;
+  }
+
+  #bicycle-thief {
+    width: 20vw;
+    height: 29vw;
+    margin: 2vw 2.5vw .5vw 0vw;
+  }
+
+  #nosferatu {
+    width: 20vw;
+    height: 29vw;
+    margin: 2vw 2vw .5vw 0vw;
+  }
+
+  #metropolis {
+    width: 20vw;
+    height: 29vw;
+    margin: 2vw 2vw .5vw 0vw;
+  }
+
+  .grid-item a {
+    display: inline-block;
+    font-size: 2.5vw;
+    margin-left: 0vw;
+  }
+
+  .grid-item #train-robbery {
+    display: inline-block;
+    font-size: 2.5vw;
+    margin-left: 2vw;
+}
+
+  .film-date2 {
+    font-family: "PT Sans";
+    font-size: 2vw;
+    color: #0B1942;
+    margin: .5vw 2vw 3.5vw 1.75vw;
+  }
+
+  .film-date2 span {
+    font-weight: 700;
+  }
+}
+
+@media only screen and (min-device-width: 769px) {
+
+/* --- Header Full Display --- */
+
+  h1 {
+    font-size: 3.75vw;
+    margin-left: 2vw;
+  }
+
+/* --- Body: Text Columns Full Display --- */
+
+
+  .column-container {
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-around;
+  }
+
+  .txt-column h3 {
+    font-size: 2.75vw;
+    font-weight: 200;
+    width: 27vw;
+    padding: .5vw 0 .5vw 1vw;
+    margin: 0 1.75vw 2.5vw 2.5vw ;
+  }
+
+  .txt-column p {
+    font-size: 1.75vw;
+    color: #0B1942;
+    line-height: 2.5vw;
+    padding: 0;
+    margin: 0 2vw 0vw 2.5vw;
+  }
+
+/* --- Body: Main Film Layout Full Display --- */
+
+  .body {
+    display: inline-block;
+    width: 100%;
+    margin-top: 3vw;
+  }
+
+  .body h3 {
+    font-size: 3.75vw;
+    padding: 2vw 5vw 1vw 5vw;
+    margin: 0vw;
+  }
+
+  .body-container {
+    display: flex;
+    flex-flow: nowrap row;
+  }
+
+  .simple-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 50vw;
+    height: 32.5vw;
+    margin: 0 1vw 2.5vw 2vw;
+  }
+
+  #rashomon {
+    width: 19.5vw;
+    height: 29vw;
+    margin: 1.5vw;
+  }
+
+  .rashomon-txt a {
+    font-size: 3.5vw;
+    margin: 1.75vw 0 0vw 0;
+  }
+
+  .film-date1 {
+    font-size: 2vw;
+    margin: .25vw 0 .25vw 0;
+  }
+
+  .film-date1 span {
+    font-weight: 700;
+  }
+
+  hr {
+    width: 23vw;
+    height: 2px;
+    background: #adafb5;
+    color: #adafb5;
+    margin-bottom: 0;
+  }
+
+  h4 {
+    font-size: 2vw;
+    margin: 1vw 0vw .5vw 0vw;
+  }
+
+  .discussion-points {
+    list-style: circle;
+    margin: 0 0 0 1vw;
+    padding-left: 1vw;
+  }
+
+  .list-item {
+    font-family: "PT Sans";
+    font-size: 2vw;
+    color: #0B1942;
+    line-height: 2.6vw;
+  }
+
+/* --- Body: Secondary Film Layout Full Display --- */
+
+
+  .grid-container {
+    background: #E2E2E2;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 48% 48%;
+    margin: 0 2vw 2.5vw 2.5vw;
+  }
+
+  #great-train-robbery {
+    width: 20vw;
+    height: 29vw;
+    margin: 1.5vw 1.5vw .5vw 1.5vw;
+  }
+
+  #bicycle-thief {
+    width: 20vw;
+    height: 29vw;
+    margin: 1.5vw .5vw .5vw 1.5vw;
+  }
+
+  #nosferatu {
+    width: 20vw;
+    height: 29vw;
+    margin: 0vw 1.5vw .5vw 1.5vw;
+  }
+
+  #metropolis {
+    width: 20vw;
+    height: 29vw;
+    margin: 0vw .5vw .5vw 1.5vw;
+  }
+
+  .grid-item a {
+    font-size: 1.6vw;
+    margin-left: 1.5vw;
+
+  }
+
+  .film-date2 {
+    font-size: 1.6vw;
+    margin: .25vw 0 0 1.5vw;
+  }
+
+  .film-date2 span {
+    font-weight: 700;
+  }
+}

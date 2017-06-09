@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
+body {
+  margin: 0;
+}
+
+/* --- Header Mobile Display --- */
+
+h1 {
+  font-family: "PT Sans";
+  font-size: 8vw;
+  font-weight: 200;
+  color: #0B1942;
+  margin-left: 2.25vw;
+}
+
+/* --- Body: Profile/Textboxes Mobile Display --- */
+
+.body {
+  background: #FFFFFF;
+  font-family: "PT Sans";
+}
+
+fieldset {
+  border: none;
+}
+
+.profile-pic {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.25vw;
+}
+
+.profile-pic label {
+  font-size: 3vw;
+}
+
+.profile-pic input {
+  font-size: 3vw;
+  cursor: pointer;
+}
+
+.profile-pic img {
+  width: 80vw;
+  height: 80vw;
+  border-radius: 50% 50%;
+  margin: 9vw 7vw 0vw 7vw;;
+}
+
+.name-email {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-left: 2.25vw;
+}
+
+.name-email label {
+  font-size: 3vw;
+}
+
+#name, #email {
+  border: solid 1px #999ba0;
+  width: 95%;
+  height: 7vw;
+  margin-bottom: 5vw;
+  cursor: pointer;
+}
+
+.password-entry {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-left: 2.25vw;
+}
+
+.password-entry label {
+  font-size: 3vw;
+}
+
+#password, #confirm-password {
+  border: solid 1px #999ba0;
+  width: 95%;
+  height: 7vw;
+  margin-bottom: 5vw;
+  cursor: pointer;
+}
+
+/* --- Body: Checkboxes Mobile Display --- */
+
+
+h4 {
+  font-size: 3vw;
+  font-weight: 400;
+  margin-left: 2.25vw;
+}
+
+.genres {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style: none;
+  font-size: 3vw;
+  height: 80vw;
+  margin-left: 2.25vw;
+  padding: 0;
+}
+
+.genre-checkbox {
+  margin-bottom: 2vw;
+}
+
+.genre-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.genre-checkbox input[type="checkbox"] + label span {
+  display: inline-block;
+  width: 3vw;
+  height: 3vw;
+  margin: 1vw 1.5vw 1vw 1vw;
+  border: .5px solid rgb(192,192,192);
+  box-shadow: inset 0 10px 10px -13px #898a8f;
+  border-radius: .5vw;
+  background: #FFFFFF;
+  vertical-align: bottom;
+  cursor: pointer;
+}
+
+.genre-checkbox input[type="checkbox"]:checked + label span:before {
+  content: '✓';
+  color: #a1a3a8;
+  font-size: 5vw;
+  font-weight: bold;
+  line-height: 5vw;
+  cursor: pointer;
+}
+
+/* --- Body: Add'l Text/Button Mobile Display --- */
+
+
+.addition-txt {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 1vw;
+}
+
+.addition-txt label {
+  font-size: 3vw;
+  margin: 0 0 1vw 2.25vw;
+}
+
+#additional-txt {
+  border: solid 1.5px #999ba0;
+  width: 95%;
+  height: 12vw;
+  margin: 0 0 5vw 2.25vw;
+  cursor: pointer;
+}
+
+button {
+  font-size: 3vw;
+  color: #FFFFFF;
+  background-color: #F5005B;
+  border: none;
+  height: 12vw;
+  width: 27vw;
+  margin: 0 0 8vw 4vw;
+  cursor: pointer;
+}
+
+
+@media only screen and (min-device-width: 545px) and (max-device-width: 768px) {
+
+  body {
+    margin: 0;
+  }
+
+/* --- Header Tablet Display --- */
+
+
+  h1 {
+    font-size: 5.5vw;
+    font-weight: 200;
+  }
+
+/* --- Body: Profile/Textboxes Tablet Display --- */
+
+
+  form {
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: flex-start;
+    width: 85vw;
+    margin: 0 2.5vw 0 2.5vw;
+  }
+
+  .profile-container {
+    display: inline-block;
+  }
+
+  .profile-pic {
+    display: flex;
+    flex-flow: nowrap column;
+    margin: 0;
+  }
+  .profile-pic label {
+    font-size: 2.5vw;
+    margin-bottom: 1vw;
+  }
+
+  .profile-pic input {
+    font-size: 2vw;
+    cursor: pointer;
+  }
+
+  .profile-pic img {
+    width: 45vw;
+    height: 45vw;
+    border-radius: 50% 50%;
+    margin: 5vw 0 0 0;
+  }
+
+  .txtbox-container {
+    display: inline-block;
+  }
+
+  #name, #email {
+    border: solid 1px #d6d8e0;
+    width: 40vw;
+    height: 4vw;
+    margin-bottom: 3vw;
+    cursor: pointer;
+  }
+
+  .name-email {
+    display: flex;
+    flex-flow: nowrap column;
+    width: 50%;
+    margin: 0;
+    width: 41vw;
+    margin: 0 0 7vw 3vw;
+  }
+
+  .name-email label {
+    font-size: 2.5vw;
+    margin-bottom: .5vw;
+  }
+
+  #password, #confirm-password {
+    border: solid 1px #d6d8e0;
+    width: 40vw;
+    height: 4vw;
+    margin-bottom: 3vw;
+    cursor: pointer;
+  }
+
+  .password-entry {
+    width: 41vw;
+    margin: 0 0 7vw 3vw;
+  }
+
+  .password-entry label {
+    font-size: 2.5vw;
+    margin-bottom: .5vw;
+  }
+
+/* --- Body: Checkboxes Tablet Display --- */
+
+
+  h4 {
+    font-size: 2.5vw;
+    font-weight: 400;
+    margin-left: 4vw;
+  }
+
+  .genres {
+    font-size: 2.5vw;
+    display: flex;
+    flex-flow: wrap column;
+    list-style: none;
+    height: 40vw;
+    padding-left: 2vw;
+    margin: 0 0 0 2.25vw;
+  }
+
+  .genre-checkbox {
+    width: 44vw;
+    margin-bottom: 2.5vw;
+  }
+
+  .genre-checkbox input[type="checkbox"] + label span {
+    width: 2.5vw;
+    height: 2.5vw;
+    margin: 1vw 1.5vw 0vw 1vw;
+    border: .5px solid rgb(192,192,192);
+    cursor: pointer;
+  }
+
+  .genre-checkbox input[type="checkbox"]:checked + label span:before {
+    font-size: 3vw;
+    line-height: 3vw;
+    cursor: pointer;
+  }
+
+/* --- Body: Add'l Text/Button Tablet Display --- */
+
+
+  .addition-txt {
+    flex-flow: nowrap column;
+    margin: 0 0 0 1vw;
+  }
+
+  .addition-txt label {
+    font-size: 2.5vw;
+  }
+
+  #additional-txt {
+    height: 9vw;
+    cursor: pointer;
+  }
+
+  button {
+    font-size: 2.5vw;
+    height: 10vw;
+    width: 23vw;
+    margin: 0 0 8vw 4vw;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-device-width: 769px) {
+
+  body {
+    margin: 0;
+  }
+
+/* --- Header Full Display --- */
+
+  h1 {
+    font-size: 3.5vw;
+    font-weight: 200;
+  }
+
+/* --- Body: Profile/Textboxes Full Display --- */
+
+  .form-container {
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: flex-start;
+    margin-bottom: 2.5vw;
+  }
+
+  .profile-pic {
+    display: flex;
+    flex-flow: nowrap column;
+    margin-left: .5vw;
+  }
+  .profile-pic label {
+    font-size: 2vw;
+    margin: 0 0 .25vw 1vw;
+  }
+
+  .profile-pic input {
+    font-size: 1.75vw;
+    padding-top: .25vw;
+    margin-left: 1vw;
+    cursor: pointer;
+  }
+
+  .profile-pic img {
+    width: 35vw;
+    height: 35vw;
+    border-radius: 50% 50%;
+    margin: 3.5vw 1vw;
+  }
+
+  .txtbox-container {
+    display: flex;
+  }
+
+  #name, #email {
+    border: solid 1px #d6d8e0;
+    width: 26vw;
+    height: 2vw;
+    margin-bottom: 1vw;
+    cursor: pointer;
+  }
+
+  .name-email {
+    margin-bottom: 7vw;
+  }
+
+  .name-email label {
+    font-size: 2vw;
+  }
+
+  #password, #confirm-password {
+    border: solid 1px #d6d8e0;
+    width: 26vw;
+    height: 2vw;
+    margin-bottom: 1vw;
+    cursor: pointer;
+  }
+
+  .password-entry label {
+    font-size: 2vw;
+  }
+
+/* --- Body: Checkboxes Full Display --- */
+
+
+  h4 {
+    font-size: 2.25vw;
+    font-weight: 400;
+    margin-left: 2.5vw;
+  }
+
+  .genres {
+    font-size: 2.25vw;
+    display: flex;
+    flex-flow: wrap column;
+    list-style: none;
+    height: 23vw;
+    padding-left: 2vw;
+    margin: 0;
+  }
+
+  .genre-checkbox {
+    width: 25vw;
+    margin-bottom: 2vw;
+  }
+
+  .genre-checkbox input[type="checkbox"] + label span {
+    width: 2vw;
+    height: 2vw;
+    margin: 1vw 1.5vw 0vw 1vw;
+    border: .5px solid rgb(192,192,192);
+    cursor: pointer;
+  }
+
+  .genre-checkbox input[type="checkbox"]:checked + label span:before {
+    font-size: 2.5vw;
+    line-height: 3vw;
+    cursor: pointer;
+  }
+
+/* --- Body: Add'l Text/Button Full Display --- */
+
+  .addition-txt {
+    flex-flow: nowrap column;
+    margin: 0 0 0 1vw;
+  }
+
+  .addition-txt label {
+    font-size: 2.25vw;
+    margin-left: .5vw;
+  }
+
+  #additional-txt {
+    height: 9vw;
+    margin-left: .5vw;
+    cursor: pointer;
+  }
+
+  button {
+    font-size: 2vw;
+    height: 8vw;
+    width: 16vw;
+    margin: 0 0 8vw 2.5vw;
+    cursor: pointer;
+  }
+
+}

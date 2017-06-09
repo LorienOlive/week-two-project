@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: "PT Sans";
+  font-size: 8vw;
+  font-weight: 200;
+  color: #0B1942;
+  margin-left: 3vw;
+}
+
+.body {
+  background: #0B1942;
+  margin-top: 5vw
+}
+
+.body h3 {
+  font-family: "PT Sans";
+  font-size: 7vw;
+  font-weight: 200;
+  color: #FFFFFF;
+  padding: 2vw 5vw 3vw 5vw;
+  margin: 0vw;
+}
+
+.calendar-container {
+  display: grid;
+  grid-template-columns: 14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  width: 100%;
+  height: 70vw;
+  padding-bottom: 7vw;
+}
+
+.day {
+  background-color: #FFFFFF;
+  border: solid 1px #0B1942;
+}
+
+.day-red {
+  background-color: #F5005B;
+  border: solid 1px #0B1942;
+}
+
+.day-blank {
+  background-color: #0B1942;
+}
+
+.day span {
+  font-family: "PT Sans";
+  font-size: 3.25vw;
+  color: #FFFFFF;
+  background-color: #0B1942;
+  display: inline-block;
+  line-height: 6vw;
+  height: 6.75vw;
+  width: 5.5vw;
+  padding: .75vw 0vw 0vw 2vw;
+}
+
+.day-red span {
+  font-family: "PT Sans";
+  font-size: 3.25vw;
+  color: #FFFFFF;
+  background-color: #0B1942;
+  display: inline-block;
+  line-height: 6vw;
+  height: 6.75vw;
+  width: 5.5vw;
+  padding: .75vw 0vw 0vw 2vw;
+}
+
+
+@media only screen and (min-device-width: 545px) and (max-device-width: 768px) {
+
+  h1 {
+    font-size: 6.5vw;
+  }
+
+  .body h3 {
+    font-size: 5vw;
+    padding: 4vw 5vw 4vw 5vw;
+    margin: 0vw;
+  }
+
+  .day span {
+    font-size: 2.25vw;
+    line-height: 3.5vw;
+    height: 4vw;
+    width: 2.5vw;
+    padding: .75vw 1vw 0vw 1vw;
+  }
+
+  .day-red span {
+    font-size: 2.25vw;
+    line-height: 3.5vw;
+    height: 4vw;
+    width: 2.5vw;
+    padding: .75vw 1vw 0vw 1vw;
+  }
+}
+
+@media only screen and (min-device-width: 769px) {
+
+  h1 {
+    font-size: 3.5vw;
+    margin: 3vw 3vw 1.5vw 1.5vw;
+  }
+
+  .body {
+    margin-top: 1vw;
+  }
+
+  .body h3 {
+    font-size: 3vw;
+    padding: 1.5vw 0vw 2vw 1.5vw;
+    margin: 0vw;
+  }
+
+  .day span {
+    font-size: 1.5vw;
+    line-height: 2vw;
+    height: 2.75vw;
+    width: 1.5vw;
+    padding: .75vw 1vw 0vw 1vw;
+  }
+
+  .day-red span {
+    font-size: 1.5vw;
+    line-height: 2vw;
+    height: 2.75vw;
+    width: 1.5vw;
+    padding: .75vw 1vw 0vw 1vw;
+  }
+}
